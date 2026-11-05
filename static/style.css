@@ -1,0 +1,14 @@
+:root{--bg:#fafaf9;--fg:#1c1917;--muted:#78716c;--accent:#e11d48;--card:#fff;--border:#e7e5e4}
+@media (prefers-color-scheme:dark){:root{--bg:#18181b;--fg:#f4f4f5;--muted:#a1a1aa;--accent:#fb7185;--card:#232327;--border:#3f3f46}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.8;word-break:keep-all}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--border)}header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.logo{font-weight:800;font-size:1.2rem;color:var(--fg)}nav a{margin-left:18px;color:var(--muted)}
+main{padding:40px 0 60px}.post-list{list-style:none;padding:0}
+.post-list li{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin-bottom:16px;transition:transform .15s}
+.post-list li:hover{transform:translateY(-2px)}.post-list h2{margin:0 0 4px;font-size:1.2rem}.post-list h2 a{color:var(--fg)}
+.meta{color:var(--muted);font-size:.9rem}blockquote{margin:1em 0;padding:.6em 1em;border-left:4px solid var(--accent);background:var(--card);border-radius:6px}
+pre{background:#0f0f12;color:#e4e4e7;padding:14px;border-radius:10px;overflow:auto}code{font-family:ui-monospace,monospace}
+footer{border-top:1px solid var(--border);color:var(--muted);font-size:.85rem;padding:24px 0;text-align:center}
+h1{line-height:1.3}
